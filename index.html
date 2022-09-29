@@ -1,0 +1,100 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1{ 
+        text-align: center;
+        
+      }
+
+      body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+    
+      section .card .image{
+        height:140px;
+        width: 140px;
+        border-radius: 50%;
+        border: 3px;
+
+      }
+
+      section .card .image img{
+     border-top-style: hidden;
+     margin-top: -100px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid red;
+      }
+
+      .card{
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 210px 210px 80px;
+        grid-template-areas:"images" "text" "area";
+        position:relative;
+        background:white;
+        border: solid whitesmoke;
+        box-shadow: 5px 5px 15px rgba(0,0, 0, 0.9);
+        border-radius: 20px;
+        text-align: center;
+        
+      }
+    
+      
+  
+      .card .card-content{
+        display: flex;
+        padding: 50px;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+       
+      }
+    </style>
+</head>
+
+<body>
+
+  <section>
+
+    <div class="container">
+      <h1>"CHEF"</h1>
+      <br><br><br><br><br>
+      <div class="content">
+      <div class="card">
+        <div class="card-content">
+          <div class="image">
+            <img src="https://png.pngtree.com/element_origin_min_pic/16/08/04/2057a33b019f06c.jpg" alt=""/>
+            <br> <br> <br>
+             <div class="name-profession">
+              <span class="name"><h4>JOYCE BOWMAN</h4></span>
+              <br> 
+              <span class="profession"><h5 style="text-align:center; ">chef</h5></span>
+              <br>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est debitis temporibus earum similique fugit hic iste nisi facere deleniti ducimus.</p>
+             </div>
+            </div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>.
